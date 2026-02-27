@@ -27,7 +27,7 @@ export default function Button({
   // Estilos normales (activos)
   const variantClasses: Record<ButtonVariant, string> = {
     primary: "bg-[#141413] text-white hover:bg-black focus-visible:ring-[#141413]/70",
-    secondary: "bg-white text-[#141413] border-[0.5px] border-[#1F1E1D]/40 focus-visible:ring-[#3266AD]/50",
+    secondary: "bg-transparent text-[#141413] border-[0.5px] border-[#1F1E1D]/40 focus-visible:ring-[#3266AD]/50",
     danger: "bg-[#B53333] text-white focus-visible:ring-[#A73D39]/50",
   };
 

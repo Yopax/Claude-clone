@@ -19,26 +19,22 @@ export default function MainNavigation() {
 
   return (
     <aside
-      className={`h-screen bg-[#FAF9F5] border-r-[0.5px] border-[#1F1E1D]/30 flex flex-col overflow-hidden transition-width duration-300 ease-in-out ${isExpanded ? "w-63.75" : "w-13"}`}
+      className={`h-screen bg-[#FAF9F5] border-r-[0.5px] border-[#e1e3e1] flex flex-col overflow-hidden transition-width duration-300 ease-in-out ${isExpanded ? "w-63.75" : "w-13"}`}
     >
-      <div
-        className={`flex items-center p-4 transition-all duration-300 ${
-          isExpanded ? "justify-between px-4 gap-2" : "justify-center px-0 gap-0"
-        }`}
-      >
+      <div className="flex items-center px-2.5 py-4 h-17 w-full">
         <div
-          className={`overflow-hidden transition-all duration-300 ${
-            isExpanded ? "max-w-40 opacity-100" : "max-w-0 opacity-0 pointer-events-none"
+          className={`flex items-center overflow-hidden transition-all duration-300 ease-in-out ${
+            isExpanded ? "w-40 opacity-100 ml-1.5" : "w-0 opacity-0 ml-0"
           }`}
         >
           <img
-            className="flex text-[20px]  font-serif font-medium text-[#111827] whitespace-nowrap"
+            className="h-5 w-auto max-w-none shrink-0 text-[20px] font-serif font-medium text-[#111827]"
             src="/icons/claude-icons-desktop/logo.svg"
             alt="Logo"
           />
         </div>
         <button
-          className="shrink-0 p-1.5 rounded  flex items-center justify-center border-none bg-transparent text-[#6b7280] cursor-pointer transition-colors duration-150 hover:bg-[rgba(107,114,128,0.12)]"
+          className="ml-auto shrink-0 w-8 h-8 flex items-center justify-center rounded border-none bg-transparent text-[#6b7280] cursor-pointer transition-colors duration-150 hover:bg-[rgba(107,114,128,0.12)]"
           onClick={() => setIsExpanded((v) => !v)}
           title={isExpanded ? "Cerrar" : "Abrir"}
         >
@@ -46,7 +42,7 @@ export default function MainNavigation() {
         </button>
       </div>
 
-      <nav className="flex flex-col  px-2 mt-3">
+      <nav className="flex flex-col px-2 mt-3">
         {[
           { icon: <IconChatAdd />, label: "New chat" },
           { icon: <IconChats />, label: "Chats" },
@@ -103,19 +99,17 @@ export default function MainNavigation() {
         </div>
       </div>
 
-      <div className="px-2 mt-auto">
-        <button className="flex items-center w-full rounded-lg border-none bg-transparent cursor-pointer px-1.5 py-1.5 transition-colors duration-150 hover:bg-[rgba(107,114,128,0.1)]">
-          <div className="w-8 h-8 rounded-full bg-[#d0759f] flex items-center justify-center shrink-0">
+      <div className="mt-auto mx-1 my-3">
+        <button className="nav-button space-x-2 flex items-center w-full hover:rounded-md border-none cursor-pointer px-1.5 py-1.5 transition-colors duration-150 hover:bg-[#f0ede6]">
+          <div className="w-7 h-7 rounded-full bg-[#d0759f] flex items-center justify-center shrink-0">
             <IconUser />
           </div>
           <div
-            className={`flex-1 flex items-center justify-between ml-2 whitespace-nowrap overflow-hidden transition-all duration-300 ${isExpanded ? "max-w-45 opacity-100" : "max-w-0 opacity-0"}`}
+            className={`flex-1 flex items-center justify-between whitespace-nowrap overflow-hidden transition-all duration-300 ${isExpanded ? "max-w-45 opacity-100" : "max-w-0 opacity-0"}`}
           >
-            <div className="overflow-hidden">
-              <span className="block text-sm font-medium text-[#374151]">
-                Sarah Chen
-              </span>
-              <span className="block text-xs text-[#9ca3af]">Pro plan</span>
+            <div className="overflow-hidden text-start">
+              <span className="block text-sm text-[#3D3D3A]">Sarah Chen</span>
+              <span className="block text-xs text-[#73726C]">Pro plan</span>
             </div>
             <span className="text-[#9ca3af] shrink-0 ml-1">
               <IconCaretDown />
