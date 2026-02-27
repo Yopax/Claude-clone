@@ -91,3 +91,30 @@ export const IconLightbulb = ({ className = "w-4 h-4" }) => (
     <path d="M10 22h4"></path>
   </svg>
 );
+
+// (Añade esto al final de tu Icons.tsx existente)
+
+export const IconAudio = ({ className = "w-5 h-5" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 2v20M17 7v10M7 9v6M22 10v4M2 11v2" />
+  </svg>
+);
+
+export const IconClose = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18" />
+    <line x1="6" y1="6" x2="18" y2="18" />
+  </svg>
+);
+
+export const IconCheck = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="20 6 9 17 4 12" />
+  </svg>
+);
+
+export const IconChevronRight = ({ className = "w-4 h-4" }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+  </svg>
+);
