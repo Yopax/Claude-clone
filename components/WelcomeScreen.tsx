@@ -74,7 +74,7 @@ export default function WelcomeScreen({ onSendMessage }: { onSendMessage: (text:
 
       {/* Saludo Principal */}
       <div className="flex items-center space-x-3 mb-8">
-        <IconClaude className="w-[34px] h-[34px] text-[#D97757]" />
+        <IconClaude className="w-8.5 h-8.5 text-[#D97757]" />
         <h1 className="text-[36px] font-serif text-[#3D3D3A] font-medium tracking-tight">
           Reflexiones del atardecer
         </h1>
@@ -93,7 +93,7 @@ export default function WelcomeScreen({ onSendMessage }: { onSendMessage: (text:
         />
       </div>
 
-      <div className="w-full relative min-h-[250px]">
+      <div className="w-full relative min-h-62.5">
         {activeData ? (
           // --- TARJETA EXPANDIDA ---
           <div className="w-full bg-white border-[0.5px] border-[#1F1E1D]/20 rounded-[14px] shadow-[0_2px_8px_rgba(0,0,0,0.04)] animate-fade-in-up" style={{ animationDuration: '0.2s' }}>

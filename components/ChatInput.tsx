@@ -49,7 +49,7 @@ export default function ChatInput({
 
   return (
     <div className="nav-button w-full flex flex-col items-center relative">
-      <div className="w-full bg-white border-[0.5px] border-[#1F1E1D]/20 rounded-2xl py-3 px-4 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.04)] focus-within:shadow-[0_4px_12px_rgba(0,0,0,0.08)] focus-within:border-[#1F1E1D]/40 transition-all min-h-[111px]">
+      <div className="w-full bg-white border-[0.5px] border-[#1F1E1D]/20 rounded-2xl py-3 px-4 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.04)] focus-within:shadow-[0_4px_12px_rgba(0,0,0,0.08)] focus-within:border-[#1F1E1D]/40 transition-all min-h-27.75">
         
         <textarea
           value={text}
@@ -105,7 +105,7 @@ export default function ChatInput({
                       </div>
                     </div>
 
-                    <div className="h-[1px] bg-[#1F1E1D]/10 my-1 mx-2"></div>
+                    <div className="h-px bg-[#1F1E1D]/10 my-1 mx-2"></div>
 
                     <div className="flex justify-between items-center p-2.5 rounded-lg hover:bg-[#F3F2EC] cursor-pointer transition-colors">
                       <div className="flex flex-col">
@@ -117,7 +117,7 @@ export default function ChatInput({
                       </div>
                     </div>
 
-                    <div className="h-[1px] bg-[#1F1E1D]/10 my-1 mx-2"></div>
+                    <div className="h-px bg-[#1F1E1D]/10 my-1 mx-2"></div>
 
                     <div className="flex justify-between items-center p-2.5 rounded-lg hover:bg-[#F3F2EC] cursor-pointer transition-colors">
                       <span className="text-[14px] text-[#141413]">Más modelos</span>

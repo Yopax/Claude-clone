@@ -12,7 +12,8 @@ import {
   IconUser,
   IconSideBar,
 } from "./Icons";
-import { starredItems, recentItems } from "./data";
+import { starredItems, recentItems } from "./MockData.tsx/data";
+import Image from "next/image";
 
 export default function MainNavigation() {
   const [isExpanded, setIsExpanded] = useState(true);
@@ -27,7 +28,9 @@ export default function MainNavigation() {
             isExpanded ? "w-40 opacity-100 ml-1.5" : "w-0 opacity-0 ml-0"
           }`}
         >
-          <img
+          <Image
+          width={25}
+          height={25}
             className="h-5 w-auto max-w-none shrink-0 text-[20px] font-serif font-medium text-[#111827]"
             src="/icons/claude-icons-desktop/logo.svg"
             alt="Logo"
